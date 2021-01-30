@@ -1,0 +1,8 @@
+# Start a docker container with out running the default entry point.
+docker_bash() {
+    docker run --rm -it --entrypoint /bin/bash $1
+}
+
+docker_sh() {
+    docker run --rm -it --entrypoint /bin/sh $1
+}

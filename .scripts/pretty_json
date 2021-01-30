@@ -1,0 +1,1 @@
+cat $1 | python -m json.tool > /tmp/pretty_json.json && cp /tmp/pretty_json.json $1

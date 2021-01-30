@@ -1,0 +1,2 @@
+alias rm_docker="docker ps -aq --no-trunc -f status=exited | xargs docker rm"
+alias clean_docker="docker system prune --force"
