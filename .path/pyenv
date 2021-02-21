@@ -1,1 +1,4 @@
-export PATH="~/.pyenv:$PATH"
+if ! printf -- "$PATH" | egrep -q -- ".pyenv"
+then
+  export PATH="~/.pyenv:$PATH"
+fi
