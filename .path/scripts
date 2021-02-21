@@ -1,1 +1,4 @@
-export PATH="~/.scripts:$PATH"
+if ! printf -- "$PATH" | egrep -q -- ".scripts"
+then
+  export PATH="~/.scripts:$PATH"
+fi

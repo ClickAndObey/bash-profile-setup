@@ -2,8 +2,11 @@
 
 Repository used to house useful aliases, scripts, and other files around bash profile setup. The goal of this repo is
 that you could copy the folders/bash_profile in to your user directory, and have everything automatically load up as
-needed. Then to add anything, simply append to an existing file, or add a new one to keep things sorted in a reasonable
-way.
+needed. Then to add anything, simply append to an existing file, or add a new one to keep things sorted reasonably.
+
+## Quick Start
+
+1. Run `./setup.sh`.
 
 ## Directory Holdings
 
