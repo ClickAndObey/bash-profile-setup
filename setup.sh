@@ -13,6 +13,10 @@ copy_bash_profile() {
   cp .bash_profile ~/.bash_profile
 }
 
+copy_zshrc() {
+  cp .zshrc ~/.zshrc
+}
+
 read -p "Copy directories to source? Will overwrite any existing directories. (Yy) " -n 1 -r
 echo
 if [[ $REPLY =~ ^[Yy]$ ]]
@@ -29,4 +33,13 @@ then
   echo "Copying bash profile..."
   copy_bash_profile
   echo "Bash Profile copied."
+fi
+
+read -p "Copy zshrc? Will overwrite the existing one. (Yy) " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+  echo "Copying zshrc..."
+  copy_zshrc
+  echo "ZSH RC copied."
 fi
